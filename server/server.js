@@ -17,8 +17,8 @@ mongoose.connect(process.env.MONGO_URI, {
 const contactRoutes = require('./routes/contactRoutes');
 app.use('/api/contact', contactRoutes);
 
-app.get("/",  (req, rep) => {
-  rep.send("Hello World");
+app.get("/", (req, res) => {
+  res.send("Hello World");
 });
 
 const PORT = process.env.PORT || 5000;
