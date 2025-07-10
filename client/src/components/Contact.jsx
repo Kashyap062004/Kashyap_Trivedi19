@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Typography, TextField, Button, Snackbar, Alert, Stack } from '@mui/material';
-import axios from "axios";
+import config from '../config';
 
 export default function ContactForm() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -13,7 +13,7 @@ export default function ContactForm() {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:5000/api/contact', {
+      const res = await fetch(`${config.BACKEND_API}/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
