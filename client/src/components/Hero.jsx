@@ -219,7 +219,7 @@ export default function HeroSection() {
               <Button
                 variant="outlined"
                 color="primary"
-                href="https://www.google.com"
+                href="https://drive.google.com/file/d/1IoR_Dp21abnHGCub-wCaqmxWh5ho8Wns/view?usp=sharing"
                 target="_blank"
                 rel="noopener"
                 size="large"

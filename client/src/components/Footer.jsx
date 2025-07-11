@@ -4,9 +4,14 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Footer() {
+   
+
   return (
     <Box sx={{ py: 3, textAlign: 'center', bgcolor: 'background.paper', mt: 4 }}>
       <Stack direction="row" spacing={2} justifyContent="center" mb={1}>
+
+
+
         <IconButton
           href="https://github.com/Kashyap062004"
           target="_blank"
@@ -15,6 +20,7 @@ export default function Footer() {
         >
           <GitHubIcon />
         </IconButton>
+
         <IconButton
           href="https://www.linkedin.com/in/kashyap-trivedi-504957286/"
           target="_blank"
@@ -24,6 +30,7 @@ export default function Footer() {
           <LinkedInIcon />
         </IconButton>
       </Stack>
+
       <Typography variant="body2" color="text.secondary">
         © {new Date().getFullYear()} Kashyap Trivedi. All rights reserved.
       </Typography>
